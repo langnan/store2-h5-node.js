@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: url('/img/store/page1-bg.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    padding-top: 12%;
+}
+
+.page-arrow{
+    position: absolute;
+    bottom: 4%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width:5%;
+}
+
+.title{
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2.4rem;
+}
+
+.highlight{
+    color: #22ffeb;    
+}
+
+.highlight-txt{
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    color: #22ffeb;
+    font-family: FZCYSJW--GB1-0;
+}
+
+.content1,.content2{
+    border: solid 1px #1460eb;
+    padding: 1.4rem;
+    width: 68%;
+    margin: 8% auto 0;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+.divider-outter, .divider-inner{
+    height: 0.6rem;
+    width: 20%;
+    margin: 0 auto;
+    border-left: solid 1px #1460eb;
+    border-right: solid 1px #1460eb;
+}
+
+.divider-inner{
+    width: 86%;
+}
+
+.content2{
+    margin-top: 0;
+}
+
+.cup{
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.page2>.title,.page3>.title{
+    margin: 0 auto;
+    width: 46%;
+    display: block;
+}
+
+.divider{
+    margin: -1px auto;
+    width: 20%;
+    display: block;
+}
+
+.page2 .content{
+    margin: 0 auto;
+    width: 80%;
+    height: 60%;
+    position: relative;
+    padding: 2% 7% 5%;
+}
+
+.page2 .content-bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content-item{
+    overflow: hidden;
+    display: table;
+    color: #fff;
+    height: 32%;
+}
+
+.content-item-title{
+    font-size: 1.6rem;
+}
+
+.item-icon-container{
+    display: table-cell;
+    vertical-align: middle;
+    width: 40%;
+}
+
+.content-item-icon{
+    width: 70%;
+}
+
+.content-item-info{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content-item-detail{
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+    line-height: 1.6rem;
+}
+
+.divider1,.divider2{
+    position: relative;
+    top: -2px;
+    width: 100%;
+}
+
+.left-hill{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 24%;
+}
+
+.right-hill{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 24%;
+}
+
+.page3-content1{
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 6%;    
+    padding-bottom: 60%;
+}
+
+.page3-content1-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.page3-content1-info{
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    width: 66%;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}
+
+.page3-content1-info span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.left-line,.right-line{
+    width: 6%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.page3-content1-info>.text{
+    padding: 0 1rem;
+    width: 88%;
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.content1-score{
+    position: absolute;
+    top: 36%;
+    color: #0bf9bd;
+    font-size: 3.8rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.flags{
+    position: absolute;
+    width: 100%;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+}
+
+.page3-content2{
+    width: 62%;
+    margin: 6% auto;
+    position: relative;
+}
+
+.page3-content2-bg{
+    width: 100%;
+}
+
+.content2-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    display: table;
+    padding: 0 1rem;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.summary-frame{
+    width: 100%;
+    height: 100%;
+}
+
+.page4{
+    padding-top: 0;
+}
+
+#license{
+    position: absolute;
+    bottom: 0.5rem;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: #eee;
+    font-size: 0.9rem;
+}

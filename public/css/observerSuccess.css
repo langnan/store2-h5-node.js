@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", "Open Sans", " Lantinghei SC", "Arial", "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-size: 7px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: #3894DE;
+    overflow: hidden;
+    background: url('/img/observerbg.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.container-top{
+    margin-top: 4rem;
+    position: relative;
+}
+
+.title-top-text{
+    color: #ffffff;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: absolute;
+    margin: auto;
+    top: 10%;
+    left: 0;
+    right: 0;
+}
+
+.title-middle-text{
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: auto;
+    top: 41%;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+}
+
+.title-bottom-text{
+    color: #ffffff;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    position: absolute;
+    margin: auto;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+}
+
+.top-img{
+    max-width: 100%;
+    margin-top: 7rem;
+    display: block;
+    margin: auto;
+}
+
+.tip{
+    color: #ffffff;
+    text-shadow:1px 1px 4px #3894DE;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.name{
+    display: block;
+    margin: auto;
+    border-radius: 3px;
+    height: 6rem;
+    width: 27rem;
+    font-size: 2.8rem;
+    padding-left: 1rem;
+    outline: none;
+    border: 1px solid #3894DE;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 3px 1px #3894DE;
+}
+
+.button{
+    color: #ffffff;
+    width: 14rem;
+    height: 6rem;
+    margin: auto;
+    margin-top: auto;
+    display: block;
+    background: url('/img/buttonstyle.png') no-repeat center center;
+    background-size: auto auto;
+    background-size: cover;
+    border: 0px solid;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+#certificate{
+    display: none;
+}
+
+#certificateImg{
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}

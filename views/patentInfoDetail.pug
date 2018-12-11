@@ -1,0 +1,21 @@
+extends storeLayout
+
+block style
+    link(rel="stylesheet", href="/css/patentInfoDetail.css")
+    
+block content
+    div.section  
+         div.section-top
+             p.topTitle= result.title
+             span.startTime= startTime
+         div.section-content
+             p !{result.content}    
+         div.section-bottom
+             div.label
+                 span 标签:
+                 each item in (labels || [])
+                     span.labelDetail= item
+             div.files
+                 span 附件:
+                 each item in (files || [])
+                     a(href=item.url class='downFile') 附件下载       

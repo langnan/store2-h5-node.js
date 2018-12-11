@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title 下载专利书包App
+        link(rel="stylesheet", href="/css/download.css")
+        link(rel="stylesheet", href="/lib/font-awesome/css/font-awesome.css")
+    body
+        .container
+            img.bg-img(src='/img/banner.jpg')
+            #loadingContainer
+                i.fa.fa-spinner
+                h1.loading-title 正在跳转到下载页 ...
+            a.download-link.android-link(href='https://downloadzgapk.oss-cn-shanghai.aliyuncs.com/patentbag1-1.apk') Android下载
+            a.download-link.ios-link(href='https://itunes.apple.com/cn/app/id1328199165?mt=8') IOS下载
+            #modal
+                p.modal-tip(style='font-size: 2.4rem') 内置浏览器无法访问该文件
+                p.modal-tip
+                    span.step-icon 1
+                    span 点击右上角的
+                    i.fa.fa-ellipsis-v
+                    span 按钮
+                p.modal-tip
+                    span.step-icon 2
+                    span 选择在 "浏览器中打开"
+        script(src='/js/jquery-2.2.4.min.js')        
+        script(src="/js/download.js")

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title 平台见证人
+        link(rel="stylesheet", href="/css/observer.css")
+        link(rel="stylesheet", href="/lib/font-awesome/css/font-awesome.css")
+    body
+        .container
+            form#form(action="/observer/name")
+                .container-top
+                    p.title-top-text 中国高校知识产权运营交易平台 
+                    img.top-img(src='/img/observertopimg.png')
+                    p.title-bottom-text 见证平台发展
+                p.tip 请留下您的姓名
+                input.name(type="text",name="name")
+                div.button 确认
+        script(src='/js/jquery-2.2.4.min.js')
+        script(src="/js/observername.js")

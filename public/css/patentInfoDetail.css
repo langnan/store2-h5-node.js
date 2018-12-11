@@ -1,0 +1,69 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif
+}
+
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+    background: #ffffff;
+    
+}
+
+
+.section{
+    width: 100%;
+    
+}
+
+.section-top{
+    padding:2.2rem 2.75rem 2.2rem 2.75rem;
+}
+.topTitle{
+    font-size:1.6rem;
+    color: #333333;
+    margin-bottom: 1.2rem;
+    line-height: 1.5
+}
+.startTime{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ececec;
+    display: inline-block;
+}
+.section-content{
+    padding:2.2rem 2.75rem 2.2rem 2.75rem;
+    font-size:1.4rem;
+    color: #333333;
+    line-height: 1.5
+}
+.section-content img{
+    width:100%!important;
+    height:auto !important;
+}
+.section-bottom{
+    padding:0 2.75rem 1rem 2.75rem;
+    font-size:1.4rem;
+    line-height: 1.8;
+}
+
+
+.downFile{
+    margin-left:2.5rem;
+}
+.labelDetail{
+    margin-left:2.5rem;
+}
+
+
+

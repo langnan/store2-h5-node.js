@@ -1,0 +1,117 @@
+extends layout
+
+block style
+	link(rel="stylesheet", href="/css/bag.css")
+	link(rel="stylesheet", href="/css/bagSummary.css")
+
+
+block content
+	div.section.page.page1
+		div.row
+			div.total-count-container
+				div.total-count= `尊敬的${result.pin}`
+					div.dot.left-dot
+					div.dot.right-dot
+				div.total-count-bg
+					span=result.count+'件专利'
+		div.row
+			p.summary.history-summary !{`自${result.adMin}至${result.adMax}，您在${result.pa}期间共产出<strong class="large-text">${result.count}</strong>件专利，专利数在本校专家中排名第<strong class="large-text">${result.countRank}</strong>位`}
+		div.row
+			img(src="/img/page1-2.png", class="paper-plane")
+			p.summary.count-summary !{`其中，发明专利<strong class="large-text">${result.fmzlCount}</strong>件，实用新型专利有<strong class="large-text">${result.syxxCount}</strong>件，外观专利有<strong class="large-text">${result.wgsjCount}</strong> 件；`}
+		div.row
+			img(src="/img/page1-1.png", class='page1-cartoon')
+		div.row
+			img(src="/img/page-arrow.png", class='page-arrow')
+
+	div.section.page.page2
+		div.page2-bg
+		div.row
+			div.page2-title-container
+				div.page2-title 专利排名
+					div.dot.left-dot
+					div.dot.right-dot
+				div.page2-title-bg
+					span 专利排名
+		div.row
+			p.summary.colleague-summary !{`多达<strong class="large-text">${result.partnerCount}</strong>位老师、同事、学生共同合作，覆盖科研领域<strong class="large-text">${result.ipcCount}</strong>个；`}
+				img(src="/img/thumb.png", class="thumb")
+		div.row.rank-row
+			div.rank-table-bg
+			div.rank-table
+				p.rank-table-title 分类专利数在本校排名			
+				div.rank-item
+					p.rank-name 发明专利
+					p.rank-value !{`<strong class="large-text">${result.fmzlRank}</strong>名`}
+				div.rank-item
+					p.rank-name 实用新型
+					p.rank-value !{`<strong class="large-text">${result.syxxRank}</strong>名`}
+				div.rank-item.rank-item-last
+					p.rank-name 外观专利
+					p.rank-value !{`<strong class="large-text">${result.wgsjRank}</strong>名`}
+		div.row.page2-bottom-row
+			img(src="/img/page-arrow.png", class='page-arrow')
+
+	div.section.page.page3
+		div.main
+			div.row.top-row
+				p !{`专利总数：<strong class="college-patent-count">${result.count}件</strong>`}
+			div.row.mid-row.mid-row1
+				p.time-range !{`（ ${result.adMin} - ${result.adMax} ）`}
+				div.chart-container
+					canvas#canPie(width=500,height=500,data-value=`${result.fmzlCount},${result.syxxCount},${result.wgsjCount}`)
+					ul.count-list
+						li.count-item
+							span.color-tip.fmzl-color
+							span.count-name 发明专利
+							span.count-value=`${result.fmzlCount}件`
+						li.count-item
+							span.color-tip.syxx-color
+							span.count-name 实用新型
+							span.count-value=`${result.syxxCount}件`
+						li.count-item
+							span.color-tip.wgsj-color
+							span.count-name 外观专利
+							span.count-value=`${result.wgsjCount}件`
+				div.rank-clue
+					img.leaf.left-leaf(src="/img/left-leaf.png")
+					span.rank-clue-txt=`您的专利数在本校排名第${result.countRank}名`
+					img.leaf.right-leaf(src="/img/right-leaf.png")  
+				div.sperator1
+
+			div.row.mid-row.mid-row2
+				div.colleague-container
+					img.row2-icon(src="/img/colleague-icon.png")
+					p 合作人员数
+					p= result.partnerCount
+				div.vertical-seperator
+				div.field-container
+					img.row2-icon(src="/img/field-icon.png")
+					p 涉及领域
+					p= result.ipcCount
+
+			div.row.mid-row.mid-row3
+				ul.rank-list  
+					li.rank-item
+						p.rank-name 发明专利排名
+						p.rank-value= result.fmzlRank
+					li.rank-item
+						p.rank-name 实用新型排名
+						p.rank-value= result.syxxRank
+					li.rank-item
+						p.rank-name 外观专利排名
+						p.rank-value= result.wgsjRank 
+			div.row.bottom-row
+				if(result.partnerRank && result.partnerRank.length>0)
+					p.thanks !{`鸣谢：${result.partnerRank}`}
+				else
+					p.thanks 鸣谢：
+			if(from!=='app')
+				a#openApp.jump-link(href="javascript:;") 想了解您的专利数据，请下载专利书包APP
+			p#license 以上数据由中高知识产权价值评估系统提供
+
+block script
+	script(src='/js/bag.js')
+	script(src='https://s19.cnzz.com/z_stat.php?id=1273944751&web_id=1273944751', language='javascript')
+
+

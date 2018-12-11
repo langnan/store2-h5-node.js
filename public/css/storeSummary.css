@@ -1,0 +1,360 @@
+.page4 .highlight{
+    color:#22ffeb; 
+}
+.page4 .row {
+    overflow: hidden;
+    position: relative;
+}
+.page4 .main{
+    width: 90%;
+    margin: 5% auto 0;
+    overflow: hidden;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.page4 .top-row,.bottom-row{
+    padding: 0 2rem;
+}
+
+.page4 .top-row .info1{
+    float: left;
+}
+
+.page4 .top-row .info2{
+    float: right;
+}
+
+.page4 .divider1{
+    width: 100%;
+    display: block;
+}
+
+.page4 .college-patent-count{
+    font-size: 2.2rem;
+}
+
+.page4 .mid-row{
+    padding: 0.8rem 1.6rem 1.6rem;
+}
+
+.page4 .time-range{
+    text-align: center;
+    font-family: FZCYSJW--GB1-0;    
+}
+
+.page4 .pie-container{
+    width: 40%;
+    height: 40%;
+    float: left;
+    position: relative;
+}
+
+.page4 .pie-bg{
+    width: 100%;
+}
+
+.page4 #canPie{
+    position: absolute;
+    width: 71%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 13%;
+    margin-left: 15%;
+}
+
+.page4 .chart-container{
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.page4 .count-list{
+    float: right;
+    width: 60%;
+    padding-top: 3%;
+    padding-left: 8%;
+    color: #22ffeb;
+    font-size: 1.4rem;
+}
+
+.page4 .count-item{
+    width: 100%;
+    border-bottom: 1px solid rgba(146, 77, 31, 0.2);
+    overflow: hidden;
+    padding: 0.4rem;
+}
+
+.page4 .divider2{
+    width: 108%;
+}
+
+.page4 .count-value{
+    display: block;
+    float: right;
+}
+
+.page4 .color-tip{
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    vertical-align: middle;
+    margin-right: 0.8rem;
+}
+
+.page4 .fmzl-color{
+    background-color: #500077;
+}
+
+.page4 .syxx-color{
+    background-color: #05044F;
+}
+
+.page4 .wgsj-color{
+    background-color: #010080;
+}
+
+.page4 .rank-clue{
+    text-align: center;
+    overflow: hidden;
+    line-height: 2rem;
+    width: 100%;
+    margin: 3% auto;
+}
+
+.page4 .leaf{
+    display: inline-block;
+    vertical-align: middle;
+    width: 6%;
+}
+
+.page4 .rank-clue-txt{
+    display: inline-block;
+    width: 84%;
+    vertical-align: middle;
+}
+
+.page4 .divider3{
+    width: 100%;
+    height: 1px;
+    position: relative;
+    top: -0.6rem;
+}
+
+.page4 .divider4{
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+}
+
+.page4 .rank-item{
+    overflow: hidden;
+    line-height: 4.4rem;
+    padding: 0 2.6rem;    
+}
+
+.page4 .divider5,.divider6{
+    width: 100%;
+    height: 1px;
+    display: block;
+}
+
+.page4 .rank-name{
+    float: left;
+}
+
+.page4 .rank-value{
+    float: right;
+}
+
+.page4 .mid-row2{
+    padding-top: 0;
+    padding-bottom: 0.8rem; 
+}
+
+.page4 .mid-row2>div{
+    float: left;
+}
+
+.page4 .row2-icon{
+    width: 1.6rem;
+}
+
+.page4 .colleague-container,.field-container{
+    width: 50%;
+    text-align: center;
+    line-height: 2.4rem;
+}
+
+.page4 .bottom-row{
+    padding: 0.6rem 1rem;;
+    font-family: inherit;
+    font-size: 1.2rem;
+}
+
+.page4 .thanks{
+    line-height: 1.6rem;
+}
+
+.page4 .jump-link{
+    display: block;
+    color: #22ffeb;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.bottom-tip{
+    text-align: center;
+}
+
+.bottom-tip a{
+    display: inline-block;
+    padding-bottom: 2px;
+    font-size: 0.9rem;
+    color: #22ffeb;    
+    text-decoration: none;
+    border-bottom: 1px solid #22ffeb;    
+}
+
+.page4 .page4-bg1{
+    width: 100%;
+    height: 100%;
+}
+
+.page4 .mid-row3{
+    width: 90%;
+    margin: 6% auto 0;
+    padding: 0;
+    height: 13.2rem;;
+}
+
+.page4 .rank-list{
+    position: absolute;
+    top: 0;
+    padding: 0 2rem;
+}
+
+.modal-btn{
+    display: block;
+    margin: 1.5rem auto;
+    width: 33%;
+}
+
+.search-modal-bg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+}
+
+.search-modal-container{
+    width: 80%;
+    height: 26rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.search-modal{
+    position: relative;
+}
+
+.book{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.close-btn{
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 3.4rem;
+    padding: 1rem;
+}
+
+.search-tip{
+	font-size: 1.8rem;
+	line-height: 4rem;
+    color: #333333;
+    text-align: center;
+}
+
+.input-container{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;    
+}
+
+.search-input{
+    width: 100%;
+    height: 4rem;
+    border: 1px solid #567fd0;
+    display: block;
+    border-radius: 5px;
+    padding: 0 1rem;
+    font-size: 1.6rem;   
+}
+
+.search-btn{
+    position: absolute;
+    right: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 4rem;
+    margin: auto;
+    padding: 1rem;
+}
+
+.content-item2 .item-icon-container{
+    text-align: right;
+}
+
+@media screen and (max-height: 668px){
+
+    .page4 .mid-row3{
+        margin-top: 2%;
+    }
+
+    .page4 .mid-row3{
+        height: 10.8rem;;
+    }
+    .page4 .rank-item{
+        line-height: 3.6rem;
+    }
+
+    .page4 .mid-row1{
+        padding-bottom: 0.8rem;
+    }
+
+    .modal-btn{
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media screen and (max-height: 569px){
+    .page4 .main{
+        padding-top: 1%;
+    }
+
+    .page4 .jump-link{
+        margin-top: 0.4rem;
+    }
+
+    .modal-btn{
+        margin: 1rem auto;
+    }
+}

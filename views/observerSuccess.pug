@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title 平台见证人
+        link(rel="stylesheet", href="/css/observerSuccess.css")
+        link(rel="stylesheet", href="/lib/font-awesome/css/font-awesome.css")
+    body
+        .container
+            .container-top
+                p.title-top-text  恭喜您成为中国高校知识产权运营交易平台
+                p.title-middle-text 
+                input.name-input(type="hidden" value=name) 
+                input.number-input(type="hidden" value=number) 
+                img.top-img(src='/img/observerimg1.png')
+                p.title-bottom-text 平台见证人 
+            p.tip 长按证书可分享给好友或保存证书后分享到朋友圈！
+            //-img.certificate(src='/img/certificate.jpg')  
+            img#certificateImg
+            canvas#certificate
+        script(src='/js/jquery-2.2.4.min.js')        
+        script(src="/js/observer.js")

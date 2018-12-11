@@ -1,0 +1,254 @@
+/* *{
+    box-sizing: border-box;
+} */
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: #f5f5f5;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
+}
+
+.section-top{
+    width:100%;
+    height:211px;
+    position: relative;
+}
+.patentImg{
+    width: 100%;
+    margin-top:2.45rem;
+    text-align: center;
+}
+.patentImg img{
+    width: 165px;
+    height: 143px;
+}
+.patentTitle{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+	/* background-color: rgba(229, 232, 251, 0.4); */
+    position: absolute;
+    left: 0;
+    bottom:0;
+    display:inline-block;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.section-bottom{
+    width: 100%;
+    position: relative;
+    
+}
+
+#subTitle{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+	background: #ffffff;
+    border-radius: 10px 10px 0px  0px;
+    background-color: #fff;
+}
+
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 100000;
+  }
+  .fixed-top {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+.titleContent {
+    font-family: PingFang-SC-Medium;
+	font-size: 1.5rem;
+    color: #333333;
+    float: left;
+    padding-left:15px;
+    display:inline-block;
+}
+
+.right{
+    display: inline-block;
+    width:7px;
+    height:12px;
+    margin-top:1.6rem;
+    float:right;
+    padding-right:3rem;
+}
+
+#wrap{
+    width:100%;
+    display: none;
+    position: absolute;
+    left: 0;
+    top:45px;
+    z-index: 10000;
+}
+
+#wrap li{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 15px;
+    background: #ffffff;
+    box-sizing: border-box;
+    text-align: left;
+    display: inline-block;
+    font-size: 1.5rem;
+    border-top: 1px solid;
+    border-color: #ccc;
+}
+
+#content{
+    width:100%;
+}
+.tab{
+    width:100%;
+    display:none
+}
+.active{
+    display:block
+}
+.defaultCss{
+    color:#000;
+    font-weight: 400;
+    font-size:2rem;
+}
+.arrow_up{
+    background: url('../img/arrow_up.png') left no-repeat;
+    background-size:12px 6.5px;
+}
+.arrow_down{
+    background: url('../img/arrow_down.png') left no-repeat;
+    background-size:12px 6.5px;
+}
+#bg{
+    display: none; 
+    position: absolute; 
+    top:45px;
+    left: 0%;
+    width: 100%; 
+    height: 100%;
+    background-color: black;
+    z-index:1001; 
+    -moz-opacity: 0.7; 
+    opacity:.70; 
+    filter: alpha(opacity=70);
+}
+
+.commonBox{
+    background-color: #ffffff;
+    border-radius: 2px;
+    margin:9px 15px 9px 15px;
+    font-size:1.4rem;
+}
+.commonBox .val{
+    margin-left:2.5rem;
+}
+
+.commonBox .resultVal{
+    padding: 0.5rem 2rem 0.5rem 0;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    line-height: 1.6;
+}
+.commonBox .basicContent{
+    padding: 5px 20px 5px 0;
+    display: inline-flex;
+    line-height: 1.6;
+}
+.commonSub{
+    width: 100%;
+    /* height: 27px; */
+    padding:13px 15px 13px 15px;
+    position: relative;
+}
+
+.isQuote{
+    margin-right:3rem;
+    width: 50px;
+    height:20px;
+    line-height: 20px;
+    text-align: center;
+	border-radius: 4px;
+    border: solid 1px #3672fc;
+    font-size:1.4rem;
+    color: #3672fc;
+    display: inline-block;
+    position: absolute;
+    right:20px;
+    top:13px;
+   
+}
+
+
+.content-date-2 {
+    width: 345px;
+    height: 27px;
+    padding:13px 15px 0 15px;
+}
+.content-status-2{
+    width: 345px;
+    height: 27px;
+    padding:13px 15px 0 15px;
+}
+.content-2{
+    width: 345px;
+    height: 27px;
+    padding:13px 15px 0 15px;
+}
+
+.num{
+    width: 345px;
+    height: 27px;
+    padding:13px 15px 0 15px;
+}
+
+.ipc{
+    width: 345px;
+    height: 27px;
+    padding:13px 15px 0 15px;
+}
+
+.downFile{
+    margin-left:2.5rem;
+}
+.resultlabel{
+    margin-left:2.5rem;
+    width: 126px;
+	height: 40px;
+	border-radius: 4px;
+	border: solid 1px #999999;
+}
+
+.maturity{
+    margin-left:2.5rem;
+    display: inline-flex;
+    line-height: 1.6;
+	border-radius: 4px;
+    border: solid 1px #498bfe;
+    color: #3572fc;
+    font-size:1.3rem;
+}

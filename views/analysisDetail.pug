@@ -1,0 +1,23 @@
+extends storeLayout
+
+block style
+    link(rel="stylesheet", href="/css/analysisDetail.css")
+    
+block content
+        div.section-top.commonBox
+            p.topTitle&attributes({'data-obj':dataObj})= result.patent && result.patent.ti || '暂无数据'
+            div#totalChart
+        div.section-content.commonBox
+            div#classify
+        div.legal.commonBox
+            span.totalVal 法律价值
+            span.val= result.evaluation && result.evaluation.fljz || '暂无数据'
+        div.economic.commonBox
+            span.totalVal 经济价值
+            span.val= result.evaluation && result.evaluation.jjjz || '暂无数据'
+        div.technological.commonBox
+            span.totalVal 技术价值
+            span.val= result.evaluation && result.evaluation.jsjz || '暂无数据'
+block script
+    script(src='/lib/echarts.min.js')
+    script(src='/js/analysisDetail.js')                   

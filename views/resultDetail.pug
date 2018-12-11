@@ -1,0 +1,55 @@
+extends storeLayout
+
+block style
+    link(rel="stylesheet", href="/css/resultDetail.css")
+    
+block content
+    div.section  
+         div.section-top
+             div.patentImg
+                 img(src=result.imageUrl, alt="")
+             div.patentTitle= result.title
+         div.section-bottom
+             div#subTitle
+                 span.titleContent 成果内容
+                 span.right&attributes({'id':'btn'})
+                 ul#wrap
+                    li(data-id="tab1" class="default") 成果内容
+                    li(data-id="tab2") 基本信息  
+             <div id="bg" class='bgImg'></div>   
+             div#content
+                div#tab1&attributes({'class':'tab'})
+                    div.resultCon&attributes({'class':'commonBox'})
+                        div.commonSub
+                            span.resultVal= result.content ? result.content :'暂无成果内容'
+                                
+                div#tab2&attributes({'class':'tab'})
+                    div.basicInfo&attributes({'class':'commonBox'})
+                        div.commonSub
+                            span 成果编号
+                            span.val= result.no
+                        div.commonSub
+                            span 成熟度
+                            span.maturity= maturity
+                        div.commonSub
+                            span 成果标签
+                            each item in (labelValueList || [])
+                                span.resultlabel= item.value
+                    div.resultTitle&attributes({'class':'commonBox'})
+                        div.commonSub
+                            span 成果摘要
+                            span.resultVal= result.introduction
+                    div.fileInfo&attributes({'class':'commonBox'})
+                        div.commonSub
+                            span 附件
+                            each item in (files || [])
+                                a(href=item.url class='downFile') 附件下载
+                                
+                                  
+                                
+                         
+                            
+                   
+                           
+block script
+    script(src='/js/resultDetail.js')

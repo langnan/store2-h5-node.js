@@ -1,0 +1,84 @@
+extends storeLayout
+
+block style
+    link(rel="stylesheet", href="/css/knowledgeReport.css")
+    
+block content
+    img(src="../img/bg1@2x.png",class='bg') 
+    div.section-top  
+            img(src='../img/title_zhuangs@2x.png', alt="")
+            p.topTitles 专利发明
+    div.content-1
+        div.patentSum
+            img(src="../img/paCount@2x.png", alt="")
+            div.box
+                span.pNum= result.count 
+                span.one 项
+                br
+                span.c_icon 
+                span.sum 专利发明总数
+        div.paInfo
+            div.valid
+                img(src="../img/paCount@2x.png", alt="")
+                div.box1
+                    span.pNum1= result.yxCount
+                    span.one 项
+                    br
+                    span.c_icon1 
+                    span.sum1 有效专利数
+            div.novalid
+                img(src="../img/paCount@2x.png", alt="")
+                div.box2
+                    span.pNum2= result.wxCount
+                    span.one 项
+                    br
+                    span.c_icon2 
+                    span.sum2 无效专利数
+    div.content-2
+        div.type_1
+                span.typeNum1= result.fmzlCount
+                span.one 项
+                br
+                span.typeSum1 发明专利
+        div.type_2
+                span.typeNum2= result.syxxCount
+                span.one 项
+                br
+                span.typeSum2 实用新型
+        div.type_3
+                span.typeNum3= result.wgzlCount
+                span.one 项
+                br
+                span.typeSum3 外观专利                 
+    div.content-3
+        p.tit= `${result.yxCount}项有效专利平均价值`
+        div#valAsessment&attributes({'data-ava':dataAva})
+    div.content-4
+        if result.an 
+            p#valInfo= `其中，${result.an},${result.ti}评估价值得分最高，为${result.patentValue}分,打败了全国${result.surpass}高校科研专利`
+    div.content-5
+        p.yx= `有效专利${result.yxCount}项评估价格总额>=${result.yxPatentPrice}W ` 
+        div#validChart
+            img(src="../img/store2/yx.png", alt="")
+    div.content-6
+        p.wx= `无效专利${result.wxCount}项评估价格总额>=${result.wxPatentPrice}W ` 
+        div#novalidChart
+            img(src="../img/store2/wx.png", alt="")
+    div.content-7
+         img(src='../img/title_zhuangs@2x.png', alt="")
+         p.middleTitles&attributes({'data-header':headerData}) 科研方向
+    div.content-8
+        div#sciChart&attributes({'data-sci':dataSci})       
+    ul.section-bottom
+        li.left
+            img(src="../img/specialist@2x.png", alt="")
+            p 全国高校中相似科研方向的专家<span class="expert"></span>位
+        li.mid    
+        li.right
+            img(src="../img/entrepreneur@2x.png", alt="")
+            p 相似科研方向下可合作企业<span class="enterprise"></span>家
+    div.content-footer 
+        span 若需要相似专家数据或合作企业数据，联系客服人员索取      
+block script
+    script(src='/lib/echarts.min.js')
+    script(src='/js/knowledgeReport.js')                      
